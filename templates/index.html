@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Hunger Risk Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="main">
+  <h1>Global Hunger Risk Predictor</h1>
+  <p class="subtitle">Longitudinal GHI Severity Classification & Trend Visualization</p>
+
+  <div class="card">
+    <input id="country" placeholder="Country Name (e.g. Chad, India, Haiti)" required>
+
+    <div class="grid">
+      <input id="rank" type="number" placeholder="Global Rank (e.g. 102)" required>
+      <input id="y2000" type="number" step="0.1" placeholder="Year 2000 GHI" required>
+      <input id="y2008" type="number" step="0.1" placeholder="Year 2008 GHI" required>
+      <input id="y2015" type="number" step="0.1" placeholder="Year 2015 GHI" required>
+    </div>
+    <input id="y2023" type="number" step="0.1" placeholder="Year 2023 GHI" required>
+
+    <button onclick="predict()">Classify Food Security Risk</button>
+
+    <div id="result"></div>
+
+    <div class="chart-wrapper">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
