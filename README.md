@@ -1,4 +1,4 @@
-# 🌍 Global Hunger Risk Predictor
+# Global Hunger Risk Predictor
 
 > **AI-Driven Global Hunger Index (GHI) Severity Classification & Trend Visualization Platform**
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 The **Global Hunger Risk Predictor** is a machine learning-backed web platform designed to analyze historical multi-year hunger index metrics and predict future food insecurity risk levels across nations.
 
@@ -18,7 +18,7 @@ Utilizing longitudinal data spanning the years **2000, 2008, 2015, and 2023**, t
 
 ---
 
-## 🏗️ Architecture & Workflow
+## Architecture & Workflow
 
 ```mermaid
 flowchart LR
@@ -31,16 +31,16 @@ flowchart LR
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Trained Machine Learning Model:** Pre-trained Random Forest ensemble model (`100 estimators`) trained on normalized multi-decade GHI indices.
-- **Interactive Visual Analytics:** Integrated **Chart.js** line graph plotting the country's progression across milestone years (2000 ➔ 2008 ➔ 2015 ➔ 2023).
+- **Interactive Visual Analytics:** Integrated **Chart.js** line graph plotting the country's progression across milestone years (2000  2008  2015  2023).
 - **Fast RESTful Inference API:** Sub-millisecond predictions served via a lightweight Flask backend.
 - **Robust Feature Preprocessing:** Zero-mean, unit-variance feature scaling via `StandardScaler` with automatic inverse label mapping via `LabelEncoder`.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 hunger_project/
@@ -61,7 +61,7 @@ hunger_project/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend:** Python 3.10+, Flask
 - **Machine Learning:** Scikit-Learn (RandomForestClassifier), Pandas, NumPy, Joblib
@@ -69,7 +69,7 @@ hunger_project/
 
 ---
 
-## ⚡ Quick Start & Installation
+## Quick Start & Installation
 
 ### 1. Prerequisites
 - Python 3.10 or higher
@@ -99,7 +99,7 @@ To retrain the model and regenerate `.pkl` artifacts:
 ```bash
 python train_model.py
 ```
-*Output: `✅ All files saved successfully!`*
+*Output: ` All files saved successfully!`*
 
 ### 5. Start the Web Server
 ```bash
@@ -109,7 +109,7 @@ Open `http://127.0.0.1:5000` in your web browser.
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### Predict Hunger Risk
 - **Endpoint:** `POST /predict`
@@ -134,6 +134,6 @@ Open `http://127.0.0.1:5000` in your web browser.
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source under the [MIT License](LICENSE).
